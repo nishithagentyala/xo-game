@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.selectBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: lightblue;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+}
+.selectBox header {
+  color: blue;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid white;
+}
+.selectBox .title {
+  padding: 20px;
+}
+
+.selectBox .playerName {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+}
+.selectBox .playerName button {
+  width: 100%;
+  padding: 10px;
+}
+.selectBox .playerX,
+.playerO {
+  margin: 2px;
+}
+.selectBox.hide {
+  pointer-events: none;
+  opacity: 0;
+}
+.playboard {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+.playboard.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.playboard .players {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: lightblue;
+  padding: 8px;
+}
+.playboard .players div {
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+}
+.players .xturn.active {
+  background-color: white;
+}
+.players .oturn.active {
+  background-color: white;
+}
+.boxes {
+  background-color: lightblue;
+  display: grid;
+  height: 203px;
+  width: 203px;
+  grid-template-columns: 70px 70px 70px;
+  grid-template-rows: 70px 70px 70px;
+  border-color: white;
+  margin-top: 20px;
+}
+.box {
+  color: deepskyblue;
+  width: 63px;
+  height: 63px;
+  font-size: 50px;
+  border: none;
+  background-color: white;
+  border: 0.5px solid lightblue;
+}
+.result {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightblue;
+  max-width: 350px;
+  width: 100%;
+  padding: 10px;
+  pointer-events: none;
+}
+.won-game {
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+#reset {
+  margin: 10px 100px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+}
+.result.showwinner {
+  opacity: 1;
+  pointer-events: auto;
+}
