@@ -15,7 +15,7 @@
   color: blue;
   font-size: 50px;
   text-align: center;
-  padding: 20px;
+  padding:20px;
   border-bottom: 2px solid white;
 }
 .selectBox .title {
@@ -24,8 +24,7 @@
 
 .selectBox .playerName {
   display: flex;
-  width: 100%;
-  padding: 15px;
+  padding: 10px;
 }
 .selectBox .playerName button {
   width: 100%;
@@ -33,7 +32,8 @@
 }
 .selectBox .playerX,
 .playerO {
-  margin: 2px;
+  width: 100%;
+  margin: 1px;
 }
 .selectBox.hide {
   pointer-events: none;
@@ -53,7 +53,6 @@
 }
 .playboard .players {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   background-color: lightblue;
   padding: 8px;
@@ -72,21 +71,23 @@
 .boxes {
   background-color: lightblue;
   display: grid;
-  height: 203px;
-  width: 203px;
-  grid-template-columns: 70px 70px 70px;
-  grid-template-rows: 70px 70px 70px;
+  height: 275px;
+  width: 275px;
+  grid-template-columns: 95px 95px 95px;
+  grid-template-rows: 95px 95px 95px;
   border-color: white;
-  margin-top: 20px;
+  margin: 10px;
+
 }
 .box {
   color: deepskyblue;
-  width: 63px;
-  height: 63px;
+  width: 85px;
+  height: 85px;
   font-size: 50px;
   border: none;
   background-color: white;
   border: 0.5px solid lightblue;
+  margin: 0;
 }
 .result {
   opacity: 0;
@@ -110,11 +111,12 @@
 #reset {
   margin: 10px 100px;
   padding: 10px;
-  background-color: rgb(24, 24, 194);
+  background-color: rgb(101, 164, 185);
   color: white;
   font-weight: bolder;
   border: none;
   cursor: pointer;
+  font-size: 20px;
 }
 .result.showwinner {
   opacity: 1;
