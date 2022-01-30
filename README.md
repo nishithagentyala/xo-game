@@ -1,3 +1,3 @@
-# xo-game
+#xo-game
 
 ##playerX and playerO
