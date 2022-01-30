@@ -108,10 +108,23 @@
   padding: 10px;
   justify-content: center;
 }
+.res{
+   position: absolute;
+ padding: 10px;
+ margin: 10px 100px;
+  background-color: rgb(101, 164, 185);
+  color: white;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100px;
+  border-radius: 2px;
+}
 #reset {
   margin: 10px 100px;
   padding: 10px;
-  background-color: rgb(101, 164, 185);
+  background-color: blue;
   color: white;
   font-weight: bolder;
   border: none;

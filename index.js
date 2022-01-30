@@ -9,6 +9,7 @@ const allbox = document.querySelectorAll(".box");
 const result = document.querySelector(".result");
 const wonText = document.querySelector(".won-game");
 const replay = document.querySelector("#reset");
+const reset = document.querySelector(".res");
 let currentTurn,
   xClass = "X",
   oClass = "O",
@@ -130,5 +131,8 @@ function draw() {
   playBoard.classList.remove("show");
 }
 replay.addEventListener("click", () => {
+  window.location.reload();
+});
+reset.addEventListener("click", () => {
   window.location.reload();
 });
